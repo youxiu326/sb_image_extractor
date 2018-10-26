@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<base th:href="${#httpServletRequest.getContextPath()+'/'}">
+<meta charset="UTF-8">
+
+</head>
+<body>
+
+<form action="upload" method="post" enctype="multipart/form-data">
+    <input type="file" id="file" name="file"  />
+    <input type="submit" value="上传图片" />
+</form>
+
+<br/>
+
+<!-- 图片回显 -->
+<img src="a.jpg" id="show" width="200px" height="200px">
+
+
+<!--翻转90度的图片-->
+<img src="c.jpg" id="no" width="200px" height="200px">
+</body>
+
+<script>
+
+
+</script>
+
+</html>
